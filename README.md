@@ -1,4 +1,45 @@
 # Health-and-Fitness
-Personal experiment of trying to understand the effects of dieting and exercising on the human body
 
-For exactly a year, I will be recording personal body measurement, dieting details (macros and calories) as well as excersize breakdown to be able to run modeling to potentially measure the impact of dieting and excersize on two main categories: weight (boy fat, total weight, body measurements) and overall health (digestion, energy, skin/nail condition).
+For exactly a year, I will be recording personal body measurement, dieting details (macros and calories) as well as excersize breakdown to be able to run modeling to potentially measure the impact of dieting and excersize on two main categories: weight (total weight, body measurements) and overall health (digestion, energy, skin/nail condition). 
+
+Here's the detailed list of all the variables considered for collection:
+
+| Name               | Description                                                                                                              | Metric   | 
+|--------------------|--------------------------------------------------------------------------------------------------------------------------|----------| 
+| date               | the date of the features mesured                                                                                         | dd/mm/yy | 
+| weight             | weight down to 1 decimal point                                                                                           | kg       | 
+| skin               | skin state from 0 to 10 (0-bad; 10-excellent)                                                                            | 10-scale | 
+| nails              | nails state from 0 to 10 (0-bad; 10-excellent)                                                                           | 10-scale | 
+| digestion          | digestion state from 0 to 10 (0-serious indigestion; 10-poop like a God)                                                 | 10-scale | 
+| sugar intake       | how much sugar is consumed in total (included natural occuring sugar in fruits and veggies)                              | g        | 
+| added_sugar_intake | how much added sugar/honey/agave consumed outside of naturally occuring sugar in fruits and veggies                      | g        | 
+| fat                | how much fat was consumed during the day                                                                                 | g        | 
+| carbs              | how much carbohydrates were consumed during the day                                                                      | g        | 
+| protein            | how much protein was consumed duing the day                                                                              | g        | 
+| energy             | "level of energy throughout the day on a scale of 0-10 (0-low energy, 10-super energetic)"                               | 10-scale | 
+| exercise (min)     | how much exercise was done during the day (includes biking/walking)                                                      | min      | 
+| exercise (type)    | "if more than one type was done, only indicate the one with highest time investment","{cardio, weights, high intensity}" |          | 
+| total_calories     | number of total calories consumer during the day                                                                         | count 0+ | 
+| collagen           | "boolean to indicate whether a collagen supplement was taken (0-false, 1 - true)"                                        | boolean  | 
+| pea_protein        | "boolean to indicate whether a pea protein supplement was taken (0-false, 1 - true)"                                     | boolean  | 
+| whey_protein       | "boolean to indicate whether a whey protein supplement was taken (0-false, 1 - true)"                                    | boolean  | 
+| hemp_protein       | "boolean to indicate whether a hemp protein supplement was taken (0-false, 1 - true)"                                    | boolean  | 
+| breast             | breast measurement                                                                                                       | cm       | 
+| waist              | waist measurement                                                                                                        | cm       | 
+| left_arm           | left arm measurement                                                                                                     | cm       | 
+| right_arm          | right arm measurement                                                                                                    | cm       | 
+| left_thigh         | left thigh measurement                                                                                                   | cm       | 
+| right_thigh        | right thigh measurement                                                                                                  | cm       | 
+| glutes             | glutes measurement                                                                                                       | cm       | 
+| fiber              | daily fiber intake in grams                                                                                              | g        | 
+| gluten             | "boolean indicating whether gluten was consumed (0-false, 1- true)"                                                      | boolean  | 
+| processed_food     | boolean indicating whether processed food was consumed (0-false; 1-true)                                                 | boolean  | 
+| binge_eating       | "boolean indicating whether there was any binge (uncontrollable) eating during the day (0-false, 1-true)"                | boolean  | 
+| red_meat           | boolean indicating whether red meat was consumed (o-false; 1-true)                                                       | boolean  | 
+| steps              | number of steps                                                                                                          | count 0+ | 
+| miles_walked       | miles walked during the day                                                                                              | km       | 
+| eat_out            | boolean indicating whether the person ate outside of one's home                                                          | boolean  | 
+| caffeine           | boolean indicating whether there was any caffeine consumption during the day                                             | boolean  | 
+| hair               | "hair state (0-falling out, weak ad dry; 10-great, shiny, strong)"                                                       | 10-scale | 
+
+
